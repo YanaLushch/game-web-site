@@ -1,0 +1,562 @@
+* {
+    box-sizing: border-box;
+} 
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 680px) {
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+/*1st Background */
+.bg1{
+    height: 100vh;
+    background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url("../images/BG1.png") center no-repeat;
+    background-size: cover;
+} 
+header {
+    position: relative;
+    height: 84px;
+}
+.logo{
+    display: block;
+    position: relative;
+    left: 0;
+    top: 29px;
+    background: url(../images/logo.png) center no-repeat;
+    background-size: contain;
+    width: 55px;
+    height: 55px; 
+}
+h1{
+    font-size: 80px;
+}
+.navigation{
+    margin: auto;
+    margin: 0 350px 0 200px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation a, .privacy{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+@media (max-width: 680px) {
+    .navigation{
+        display: none;
+    }
+}
+/*Language dropdown*/
+.dropdown {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    top: 45px;
+    position: absolute;
+    right: 100px; 
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .dropdown .select {
+      cursor: pointer;
+      display: block;
+      padding: 5px;
+  }
+  .arrow {
+    margin: 0 0 2px 10px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.dropdown .dropdown-menu {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9
+  }
+ .dropdown .dropdown-menu li {
+      padding: 10px;
+      cursor: pointer;
+  } 
+ .dropdown .dropdown-menu {
+      padding: 0;
+      list-style: none
+  }
+  .dropdown .dropdown-menu li:hover {
+      color:rgba(227,166,77);
+  }
+  .dropdown .dropdown-menu li:active {
+      color: rgba(227,166,77);
+  }
+.games_logo { 
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 45px;
+    right: 30px;
+}
+@media (max-width: 680px) {
+    .games_logo{
+        display: none;
+    }
+}
+.xbox{ 
+    background: url(../images/xbox\ icon\ \(1\).svg) no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+.steam{
+    background: url(../images/steam\ icon.svg) no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+/*Title with some cites*/
+.title{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title h1, h1{
+    font-family: 'Bebas Neue', normal;
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+@media (max-width: 680px) {
+    .title h1, h1{
+        font-size: 33px;;
+    }
+}
+.title p, .reqTitle p{
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+@media (max-width: 680px) {
+    .title p, .reqTitle p{
+        font-family: 'Bebas Neue';
+        font-size: 18px;
+    }
+}
+.title button, .peopleThought button, .mail button{
+    background-color: rgb(240, 179, 65);
+    padding: 25px 15px 25px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0px;
+}
+.slider{
+    justify-self: end;
+    text-align: center;
+    left: calc(50% - 40px);
+    text-decoration: none;
+    color: white;
+}
+.slider p, p{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* Nex Backround with MAIN properties*/
+.bg2{
+    height: 100vh;
+    background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../images/bg\ image\ 2.png) center no-repeat;
+    background-size: cover;
+}
+.main_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main, .main p{
+    width: 600px;
+    text-align: left;
+}
+.main h2 {
+    border-color: white;
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 50px 0 0 210px;
+    text-align: justify;
+}
+.gallery {
+    justify-self: lef;
+    background: url(../images/screenshot\ 1.jpg) center no-repeat;
+    border-radius: 5px;
+    width: 503px;
+    height: 611px;
+    margin: auto;
+}
+/* Special features*/
+.bg3{
+    height: 100vh;
+    background: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../images/BG3.png) center no-repeat;
+    background-size: cover;
+}
+.progressBar h2{
+    padding: 20px 0px 0px 0px;
+    width: 370px;
+    border-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: justify;
+}
+.progressBar li{
+    font-family: Bebas Neue;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFB548;
+    position: relative;
+    padding: 20px;
+}
+.about{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.progressBar li:before{
+    content: '';
+    height: 0.35rem;
+    width: 0.35rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: block;
+    position: absolute;
+    left: -40px;
+    top: 30px;
+}
+.progressBar li:first-child:before{
+    background-color: #ffffff;
+}
+.progressBar{
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+.progressBar li h2, h2{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;  
+    line-height: 20px; 
+}
+.progressBar li:first-child:after{
+    content: '';
+    position: absolute;
+    height: 97%;
+    width: 1px;
+    background-color: white;
+    left: -37px;
+    top: 35px;
+}
+/*System Requirements*/
+.bg4{
+    height: 100vh;
+    background: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url(../images/BG4.png) center no-repeat;
+    background-size: cover;
+}
+.reqTitle{
+    margin: 145px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tableTitle{
+    font-family: Bebas Neue;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFB548;
+    position: relative;
+    padding: 20px;
+}
+table,td, th{
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+table{
+    width: 500px;
+    border-collapse: collapse;
+    border-spacing: 0; 
+    text-align: left;
+    margin: 30px 0 0 0;
+}
+td h2, th h2{
+    margin: 0 0 20px 20px;  
+}
+/* Quotes Background*/
+.bg5{
+    height: 100vh;
+    background:url(../images/BG5.png) center no-repeat;
+    background-size: cover;
+}
+.quotes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    top: 100px;
+    position: absolute;
+}
+.peopleThought{
+    width: 540px;
+    padding: 100px 150px 0 0;
+}
+.twitterThought{
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+.peopleThought h2{
+    margin: 20px 0 30px 30px;
+}
+.peopleThought button{
+    padding: 20px 40px 20px 40px;
+}
+.firstBox, .secondBox, .thirdBox{
+    background-color:rgb(25, 26, 27);
+    border-radius: 5px;
+    border: 0px;
+    padding: 0px 30px 15px 15px;
+    width: 450px;
+    position: relative;
+}
+.firstBox, .thirdBox{
+    margin: 0 0 0 100px;
+}
+.twitLogo{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 28px;
+    background: url(../images/twitter.svg) center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+.firstBox h5, .secondBox h5,.thirdBox h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: justify;
+    opacity: 0.5;
+    padding: 0 0 10px 50px;
+}
+.twitName{
+    font-family: Bebas Neue;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFB548;
+    position: relative;
+    padding: 10px 0 0px 50px;
+}
+.twitPic{
+    display: block;
+    position: absolute;
+    top: 10px;
+    background: url(../images/twitPic.png) center no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+.firstBox h6, .secondBox h6,.thirdBox h6, .rights{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding: 10px 0 0 0;
+}
+/*Background with Newsletter and subscription*/
+.bg6{
+    height: 770px;
+    background:rgb(8,10,11) center no-repeat;
+    background-size: cover;
+}
+.newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.picture{
+    background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url(../images/BG6-pic.png) center no-repeat;
+    height: 680px;
+    width: 700px;
+}
+.stayInTouch{
+    position: relative;
+    top: 50px;
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 850px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(28, 30, 31);
+    width: 360px;
+    border-radius: 10px;
+    padding: 10px 0 10px 20px;
+}
+.inputAdress {
+    width: 300px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline-width: 0;
+    background-color: rgb(28, 30, 31);
+    border: 0;
+    color: #FFB548;
+}
+.mailAdress{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.mail{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 650px;
+}
+.mail button{
+    width: 260px;
+}
+.stayInTouch h2{
+    padding: 50px 0 50px 0;
+}
+/*Footer*/
+.footer{
+    position: relative;
+    height: 90px;
+    display: flex;
+}
+.logoFooter{
+    display: block;
+    position: relative;
+    left: 0;
+    background: url(../images/logo.png) center no-repeat;
+    background-size: contain;
+    width: 65px;
+    height: 65px;
+}
+.naviFooter{
+    margin: 35px 150px 0 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 650px;
+}
+.naviFooter a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+.socialMedia{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: 35px;
+    right: 30px; 
+}
+.facebook{
+    background: url(../images/facebook.svg) center no-repeat;
+    background-size: contain; 
+    height: 15px;
+    width: 15px;
+}
+.twitter{
+    background: url(../images/twitter.svg) center no-repeat;
+    background-size: contain; 
+    height: 15px;
+    width: 15px;
+}
+.youtube{
+    background: url(../images/youtube.svg) center no-repeat;
+    background-size: contain; 
+    height: 15px;
+    width: 15px;
+}
+.messenger{
+    background: url(../images/twitch.svg) center no-repeat;
+    background-size: contain; 
+    height: 15px;
+    width: 15px;
+}
+.copyright{
+    height: 140px;
+    background: rgb(8,10,11);
+}
+.copyright .container{
+    border: solid #ffffff;
+    border-width: 1px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+}
+.privacy, .rights{
+    padding: 25px 0 0 0;
+}
+
+
+
